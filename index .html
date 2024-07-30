@@ -11,7 +11,7 @@
     <script src="https://fastly.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
     <script>
         // 读取TXT文件并随机选择一个URL
-        fetch('https://doglink.cf/gh/cooliceycold/random-video-api/video.txt')
+        fetch('video.txt')
             .then(response => response.text())
             .then(text => {
                 const urls = text.split('\n').filter(url => url.trim() !== '');
